@@ -18,6 +18,6 @@ RUN git clone --branch $CMS_BRANCH --depth 1 https://github.com/$CMS_REPO.git /c
     pip install -r requirements.txt && \
     ./prerequisites.py -y --no-conf --as-root install && \
     python setup.py install && \
-    python setup.py compile_catalog
+    python setup.py install
 
 COPY cms.conf /usr/local/etc/cms.conf
