@@ -14,7 +14,7 @@ RUN pip install --upgrade pip
 
 RUN git clone --branch $CMS_BRANCH --depth 1 https://github.com/$CMS_REPO.git /cms && \
     cd /cms && \
-    git submodule update --init --depth 1 && \
+    git submodule update --init && \
     pip install -r requirements.txt && \
     ./prerequisites.py -y --no-conf --as-root install && \
     python setup.py install && \
