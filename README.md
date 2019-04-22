@@ -1,6 +1,6 @@
 Building:
 ```
-docker build -t eio .
+docker build --network host -t eio .
 ```
 
 Example interaction including all required flags:
