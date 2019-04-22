@@ -10,7 +10,7 @@ RUN python2 get-pip.py
 
 ARG CMS_REPO=ahtotruu/cms
 ARG CMS_BRANCH=boi
-ARG CMS_COMMIT=6005b833ed11b5f59d041fd099340e997698c0e7
+ARG CMS_COMMIT=f68a5b4d000ca3d7aa7e6ad108b4cdd85c7dbef0
 
 RUN git clone --branch $CMS_BRANCH --depth 1 https://github.com/$CMS_REPO.git /cms && \
     cd /cms && \
