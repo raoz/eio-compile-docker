@@ -1,4 +1,4 @@
-FROM debian:9.8
+FROM debian:10.3
 
 ARG CMS_REPO=raoz/cms
 ARG CMS_BRANCH=master
